@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+message Notes {
+  repeated NoteMessage notes = 1;
+}
+
+message NoteMessage {
+  string id = 1;
+  string date = 2;
+  string note = 3;
+  string title = 4;
+}
+
+message Response {
+  bool result = 1;
+}
+
+message NoteToDelete {
+  string id = 1;
+}
